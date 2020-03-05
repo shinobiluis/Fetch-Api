@@ -21,7 +21,7 @@ const fetchJson = () => {
 }
 const fetchImage = () => {
     showLoader('#loader2', '#fetch2')
-    fetch('bulbasaur.png')
+    fetch('./image/bulbasaur.png')
     .then( response => response.blob() ) // blob = binary large objet (Recibimos un objeto binario)
     .then( (binayrLargeObject) => {
         const domString = URL.createObjectURL(binayrLargeObject)
