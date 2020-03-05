@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6bd20;
+    font-family: 'Roboto', sans-serif;
+}
+.hidde{
+    display: none!important;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.item{
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 10px;
+    padding: 5px;
+    background: #FFFFFF;
+}
+    .item figure{
+        height: 299px;
+        display: block;
+    }
+    .item img{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .item h2{
+        text-align: center;
+    }
+    .item button{
+        display: block;
+        margin: 0 auto;
+    }
+
+code{
+    color: red;
+}
+
+/* css de boton */
+button{
+    text-decoration:none;
+    color:#FFF;
+  }
+.rainbow-button {
+    width:100%;
+    height:50px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:1.5vw;
+    font-weight:bold;
+    position: relative;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width: 98%;
+    height: 42px;
+    background-color: #03bffe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    border-radius: 5px;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:324px;
+    }
+  }
