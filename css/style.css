@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6bd20;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.item{
+    border: 1px solid blue;
+}
+    .item img{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .item h2{
+        text-align: center;
+    }
+    .item button{
+        display: block;
+        margin: 0 auto;
+    }

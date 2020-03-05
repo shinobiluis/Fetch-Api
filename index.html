@@ -4,78 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch</title>
-    <style>
-        body{
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f6bd20;
-        }
-    </style>
-    <img src="" id="pokemon" height="200">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <script>
-        const $pokemon = document.querySelector('#pokemon')
-        function renderPokemon(image){
-            $pokemon.setAttribute('src', image)
-        }
-
-        /*
-        * Este ejemplo hace una peticion get a un json y 
-        * actualiza la imagen al encontrar el valor image
-        */
-        fetch('./pokemon.json')
-        .then( response => response.json() )
-        .then( (data) => {
-            debugger;
-            console.log(data)
-            renderPokemon(data.image)
-            
-        })
-
-
-        /*
-        * Este ejemplo hace una peticion get a una imagen directa
-        * y actualiza la imagen al encontrar el valor image
-        */
-        fetch('bulbasaur.png')
-        .then( response => response.blob() ) // blob = binary large objet (Recibimos un objeto binario)
-        .then( (binayrLargeObject) => {
-            debugger;
-            const domString = URL.createObjectURL(binayrLargeObject)
-            console.log(domString)
-            renderPokemon(domString)
-            
-        })
-
-        /*
-        * Este ejemplo hace una peticion get a una imagen directa
-        * y actualiza la imagen al encontrar el valor image
-        */
-        fetch('bulbasaur.png')
-        .then( response => response.blob() ) // blob = binary large objet (Recibimos un objeto binario)
-        .then( (binayrLargeObject) => {
-            debugger;
-            const domString = URL.createObjectURL(binayrLargeObject)
-            console.log(domString)
-            renderPokemon(domString)
-            
-        })
-        /*
-        * Este ejemplo hace una peticion get a una imagen directa
-        * y actualiza la imagen al encontrar el valor image
-        */
-        fetch('https://pokeapi.co/api/v2/pokemon/25/')
-        .then( response => response.json() ) // blob = binary large objet (Recibimos un objeto binario)
-        .then( (pokemon) => {
-            debugger;
-            renderPokemon(pokemon.sprites.front_default)
-            
-        })
-    </script>
-    
+    <main class="wrapper">
+        <div class="item">
+            <img src="./quien.jpg" alt="" id="fetch1">
+            <h2>Fetch 1</h2>
+            <button id="btnFetch1">Cargar Fetch</button>
+        </div>
+        <div class="item">
+            <img src="./quien.jpg" alt="" id="fetch2">
+            <h2>Fetch 2</h2>
+            <button id="btnFetch2">Cargar Fetch</button>
+        </div>
+        <div class="item">
+            <img src="./quien.jpg" alt="" id="fetch3">
+            <h2>Fetch 3</h2>
+            <button id="btnFetch3">Cargar Fetch</button>
+        </div>
+    </main>
+    <script src="./functions.js"></script>
 </body>
 </html>
