@@ -6,23 +6,33 @@
     <title>Fetch</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/spinners.css">
 </head>
 <body>
     <main class="wrapper">
         <div class="item">
-            <img src="./quien.jpg" alt="" id="fetch1">
-            <h2>Fetch 1</h2>
-            <button id="btnFetch1">Cargar Fetch</button>
+            <figure>
+                <div class="loader hidde" id="loader1">Loading...</div>
+                <img src="./quienPikachu.png" alt="" id="fetch1">
+            </figure>
+            <h2>Fetch JSON</h2>
+            <button id="btnFetch1" class="rainbow-button" alt="Cargar"></button>
         </div>
         <div class="item">
-            <img src="./quien.jpg" alt="" id="fetch2">
-            <h2>Fetch 2</h2>
-            <button id="btnFetch2">Cargar Fetch</button>
+            <figure>
+                <div class="loader hidde" id="loader2">Loading...</div>
+                <img src="./quienBulbasaur.png" alt="" id="fetch2">
+            </figure>
+            <h2>Fetch Imagen</h2>
+            <button id="btnFetch2" class="rainbow-button" alt="Cargar"></button>
         </div>
         <div class="item">
-            <img src="./quien.jpg" alt="" id="fetch3">
-            <h2>Fetch 3</h2>
-            <button id="btnFetch3">Cargar Fetch</button>
+            <figure>
+                <div class="loader hidde" id="loader3">Loading...</div>
+                <img src="./quienCharmander.png" alt="" id="fetch3">
+            </figure>
+            <h2>Fetch API</h2>
+            <button id="btnFetch3" class="rainbow-button" alt="Cargar"></button>
         </div>
     </main>
     <script src="./functions.js"></script>
